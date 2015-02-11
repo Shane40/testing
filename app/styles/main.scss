@@ -2,21 +2,22 @@
 @import '../../bower_components/bourbon/dist/bourbon';
 @import '../../bower_components/neat/app/assets/stylesheets/neat';
 
-// Custom Styles
+
 body {
-  background: linear-gradient(#ccc, #fff);
+    background: linear-gradient(#ccc, #fff);
     height: 1000px;
 }
-.hero-unit {
-  background: #fff;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  margin: 50px auto 0 auto;
-  width: 500px;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 30px;
-  border-radius: 6px;
-  padding: 60px;
+ 
+.listtitle {
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    margin: 50px auto 0 auto;
+    width: 500px;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 30px;
+    border-radius: 6px;
+    padding: 60px;
   h1 {
     font-size: 60px;
     font-family: 'PT Serif', serif;
@@ -26,12 +27,43 @@ body {
     padding-bottom: 3px;
     border-bottom: 4px double lightgray;
   }
+  form {
+    margin-bottom: 25px;
+  }
+  ul {
+    margin: 0; 
+    padding: 0;
+  }
+ 
+ input {
+  font-family: 'PT Serif', serif;
+  width: 310px;
+  height: 38px;
+  padding-left: 10px;
+ }
+ button {
+  font-family: 'PT Serif', serif;
+  color: white;
+  background: navy;
+  width: 65px;
+ }
+
   li {
+    position:relative;
+    padding: 3px 23px;
+    color:white; 
     font-family: 'PT Serif', serif;
+    background: gray;
+    border-radius: 3px;
+    clear: both;
     list-style: none;
-    border-bottom: 1px solid lightgray;
+    margin-bottom: 20px;
+    position: relative;
+    cursor: pointer;
+    &.done {
+      background: grey;
+      font-family: 'PT Serif', serif;
+    }
+ 
   }
-  p {
-    font-family: 'PT Serif', serif;
-  }
-}
+ }
