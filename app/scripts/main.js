@@ -24,7 +24,7 @@ var total = newList.push();
 console.log(total);
 
 $('#todoList').append('<ul>' + userInput + '</ul>');
-
+// console.log(userInput);
 
 var Todo = function (options){
   options = options || {};
